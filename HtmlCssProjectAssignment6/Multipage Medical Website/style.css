@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f4f5;
+}
+header {
+  width: 100%;
+  height: 100px;
+}
+nav {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.nav_menus ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_menus ul li {
+  list-style: none;
+  padding-left: 30px;
+  font-weight: bold;
+}
+li a {
+  text-decoration: none;
+  color: #393535;
+}
+.main_section {
+  width: 100%;
+}
+.main_bg_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.main_bg_img {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 500px;
+}
+.hero_section {
+  width: 70%;
+  background-color: #f0f4f5;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.left_hero_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.left_hero_section h1 {
+  font-size: 3rem;
+}
+.left_hero_section p {
+  color: #8a8b8b;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.bottomAngle {
+  position: relative;
+  left: 400px;
+}
+.mouse {
+  position: relative;
+  left: 400px;
+  top: 50px;
+}
+.right_hero_section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  min-height: calc(100vh - 100px);
+}
+.bgbox {
+  position: relative;
+  display: flex;
+}
+.greenBox {
+  position: relative;
+  width: 400px;
+}
+.yellowBox {
+  position: absolute;
+  width: 320px;
+  right: 0;
+  bottom: 15px;
+}
+.doctor {
+  position: absolute;
+  width: 400px;
+  bottom: 0;
+  right: -5px;
+}
+button {
+  background-color: #22bc7e;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .hero_section {
+    flex-direction: column-reverse;
+  }
+  .main_bg_img {
+    display: none;
+  }
+  .nav_menus ul {
+    display: none;
+  }
+  .bottomAngle {
+    left: 300px;
+  }
+  .mouse {
+    left: 300px;
+  }
+}
